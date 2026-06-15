@@ -5,8 +5,8 @@
 .section__header{
       display: grid;
 }
-.section__wrapper{
-
+.all-projects__page .section__wrapper{
+ padding: 5rem 0 5rem 0;
 }
 /* Reuses your existing project grid layout */
 .all-projects__page .projects__container {
