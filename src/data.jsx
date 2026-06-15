@@ -50,12 +50,7 @@ import {
   illustrator,
   canva,
   // sofi project
-  abisnya,
-  Axumit,
-  friends,
-  friends2,
-  kushna,
-  fremina,
+
   // NEW ADD
   dabonua,
   dabonua2,
@@ -78,7 +73,8 @@ export const menu = [
   { name: "Services" },
   { name: "Skill" },
   { name: "Projects" },
-  { name: "Testimonial" },
+  { name: "Featured Videos" },
+  { name: "BTS Videos" },
   { name: "Contact" },
 ];
 

@@ -2,6 +2,7 @@ import "./Footer.css";
 import { menu } from "../../data";
 import { Link } from "react-scroll";
 import SocialHandles from "../../ui/SocialHandles";
+import profile2 from "../../assets/new/SOFI CREATIVE Brannd w.png";
 const Footer = () => {
   return (
     <footer>
@@ -27,7 +28,12 @@ const Footer = () => {
           </p>
         </div>
         <div className="base__logo">
-          <h1 className="full__name shine">Sofi Creative Agency</h1>
+
+          <img src={profile2} className="profile__photo" alt=""
+
+          />
+
+          {/* <h1 className="full__name shine">Sofi Creative Agency</h1> */}
         </div>
       </div>
     </footer>

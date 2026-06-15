@@ -48,12 +48,6 @@ export { default as photoshop } from "./icons/sofi_icon/photoshop.svg";
 export { default as illustrator } from "./icons/sofi_icon/illustrator.svg";
 export { default as canva } from "./icons/sofi_icon/canva.png";
 // spfi project
-export { default as abisnya } from "./Sofi-projects/1 (4).jpg";
-export { default as Axumit } from "./Sofi-projects/1 (5).jpg";
-export { default as friends } from "./Sofi-projects/1 (13).jpg";
-export { default as kushna } from "./Sofi-projects/1 (12).jpg";
-export { default as fremina } from "./Sofi-projects/1 (1).png";
-export { default as friends2 } from "./Sofi-projects/1 (4).png";
 // NEW ADD
 export { default as dabonua } from "./new/papaya juice.png";
 export { default as dabonua2 } from "./new/Avocado juice.png";
