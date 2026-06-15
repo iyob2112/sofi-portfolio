@@ -1,0 +1,26 @@
+#videos .videos__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top:3rem;
+}
+.section__wrapper{
+    padding-top: 0;
+    
+}
+.btn__primary {
+    margin-top: 20px;
+  padding: 0.8rem 2rem;
+  background: var(--color-primary);
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: var(--transition);
+
+}
+@media (max-width: 768px) {
+  #videos .videos__container {
+    grid-template-columns: 100%;
+  }
+}

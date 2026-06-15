@@ -1,0 +1,29 @@
+.all-projects__page {
+  padding: 2rem 0 5rem 0; /* Extra top padding so it doesn't hide behind a navbar */
+  min-height: 80vh;
+}
+.section__header{
+      display: grid;
+}
+.section__wrapper{
+
+}
+/* Reuses your existing project grid layout */
+.all-projects__page .projects__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+/* Responsiveness */
+@media (max-width: 900px) {
+  .all-projects__page .projects__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 650px) {
+  .all-projects__page .projects__container {
+    grid-template-columns: 100%;
+  }
+}

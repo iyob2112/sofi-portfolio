@@ -1,6 +1,6 @@
 import "./Header.css";
 import HeaderTitle from "../../ui/HeaderTitle";
-import { profile1 } from "../../assets";
+import profile1 from "../../assets/new/logo.png";
 import CodeBlock from "../../ui/CodeBlock";
 import Facts from "../../ui/Facts";
 import SocialHandles from "../../ui/SocialHandles";
@@ -22,11 +22,13 @@ const Header = () => {
       <BreathCircle />
       <div className="section__wrapper">
         <div className="grid upper">
-          <div className="column">
+          <div className="">
             <HeaderTitle />
           </div>
-          <div className="column">
-            <img src={profile1} className="profile__photo" alt="" />
+          <div className="div-imag">
+            <img src={profile1} className="profile__photo" alt="" 
+            
+            />
           </div>
         </div>
         <div className="card grid lower">
@@ -34,9 +36,9 @@ const Header = () => {
           <div
             style={{ position: "relative", paddingBottom: "56.25%", height: 0 }}
           >
-<iframe 
-className="iframe"
-width="560" height="315"  src="https://www.youtube.com/embed/on5wLLnGocc?si=AoyeMRhZO-vx_0pz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>          </div>
+            <iframe
+              className="iframe"
+              width="560" height="315" src="https://www.youtube.com/embed/on5wLLnGocc?si=AoyeMRhZO-vx_0pz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>          </div>
           <div>
             <p className="text__muted description">
               I dissect Intricate user experience challenges to engineer

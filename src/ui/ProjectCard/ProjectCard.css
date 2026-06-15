@@ -79,3 +79,97 @@
 .project__card .stack img {
   object-fit: contain;
 }
+
+
+/* Prevent user from accidentally dragging the image file itself instead of swiping */
+.project__card .picture img {
+  user-select: none;
+  -webkit-user-drag: none;
+  transition: var(--transition);
+}
+
+/* Container for Mobile Dots */
+.swipe-indicators {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 6px;
+  z-index: 6;
+}
+
+.swipe-indicators .dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.4);
+  transition: all 0.3s ease;
+}
+
+.swipe-indicators .dot.active {
+  background: #fff;
+  width: 18px; /* Stretches the active dot nicely */
+  border-radius: 4px;
+}
+
+/* Responsiveness: Hide arrow buttons on mobile screens */
+@media (max-width: 768px) {
+  .image-nav__buttons {
+    display: none !important; /* Hide clicking buttons on handheld layouts */
+  }
+  
+  .project__card .picture {
+    touch-action: pan-y; /* Prevents whole-page scrolling breaks while swiping left/right */
+  }
+}
+/* Position the image wrapper relative to house absolute buttons */
+.project__card .picture {
+  position: relative;
+  height: 300px;
+  background: var(--color-ui-2);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+/* Image Navigation Container */
+.image-nav__buttons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  opacity: 0; /* Hidden by default */
+  transition: opacity 0.3s ease;
+  z-index: 5;
+}
+
+/* Show buttons when hovering over the picture banner */
+.project__card .picture:hover .image-nav__buttons {
+  opacity: 1;
+}
+
+/* Universal Button Styling */
+.nav-btn {
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border: none;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.nav-btn:hover {
+  background: rgba(0, 0, 0, 0.9);
+  transform: scale(1.1);
+}

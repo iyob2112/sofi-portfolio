@@ -1,0 +1,239 @@
+
+
+
+.video__card {
+  background: var(--color-ui-2, #1f1f38);
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: var(--color-primary-shadow);
+  display: flex;
+  flex-direction: column;
+}
+
+.video-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+}
+
+/* Forces TikTok's generated frame container to sit nicely inside your wrapper */
+.video-wrapper .tiktok-embed {
+  margin: 0 !important;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.video__card-bottom {
+
+  background: var(--color-ui-2);
+}
+/* Placeholder container */
+.video-placeholder {
+  position: relative;
+  width: 100%;
+  height: 450px; /* Aligns with active vertical layout height */
+  background: linear-gradient(135deg, #0f0f1a 0%, #1f1f38 100%);
+  cursor: pointer;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Dimmed dark overlay that pops upon mouse hover */
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  z-index: 3;
+  transition: background 0.3s ease;
+}
+
+.video-placeholder:hover .video-overlay {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+/* Large circular glassmorphic play button */
+.play-button-icon {
+  width: 70px;
+  height: 70px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+  border: 2px solid #fff;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 6px; /* Adjusts optical centering alignment of the triangle indicator arrow */
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), background 0.3s ease;
+}
+
+.video-placeholder:hover .play-button-icon {
+  transform: scale(1.15);
+  background: var(--color-primary, #4db5ff);
+  border-color: var(--color-primary, #4db5ff);
+}
+
+.play-text {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+
+/* Background visual textures */
+.placeholder-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.15;
+  width: 100%;
+  height: 100%;
+}
+
+.placeholder-tag {
+  font-size: 2rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #fff;
+}
+/* dddddddddddddddddddd */
+/* Container holding the video element frame */
+.video-player-container {
+  position: relative;
+  width: 100%;
+  height: 440px; /* Streamlined modern portrait height */
+  background: #111;
+  border-radius: 16px; /* Smoother corner radius */
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Pristine iframe stretching parameters */
+.clean-video-frame {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: #000;
+}
+
+/* Custom internal card poster */
+.video-poster-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  z-index: 5;
+}
+
+/* Clearer glassmorphic overlay over the thumbnail */
+.video-custom-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Darkens thumbnail slightly for high contrast */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  z-index: 2;
+  transition: all 0.3s ease;
+}
+
+.video-poster-wrapper:hover .video-custom-overlay {
+  background: rgba(0, 0, 0, 0.2); /* Lightens up on hover to feel interactive */
+}
+/* Minimalist Clean Play Button (No heavy neon glows) */
+.custom-play-ring {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.custom-play-icon {
+  font-size: 20px;
+  color: #111; /* Sharp dark icon against white circle */
+  margin-left: 3px; /* Keeps the triangle perfectly centered */
+}
+
+.video-poster-wrapper:hover .custom-play-ring {
+  transform: scale(1.1);
+  background: var(--color-primary, #4db5ff); /* Switches to accent color beautifully */
+}
+.video-poster-wrapper:hover .custom-play-icon {
+  color: #fff;
+}
+
+.custom-play-callout {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+/* Decorative backdrop texture details */
+.video-poster-fallback {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(180deg, #1f1f38 0%, #0f0f1a 100%);
+  opacity: 0.2;
+}
+/* High-Quality Thumbnail Image Background */
+.video-thumbnail-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Forces image to fill completely without stretching */
+  transition: transform 0.5s ease;
+}
+.video-poster-wrapper:hover .video-thumbnail-bg {
+  transform: scale(1.04); /* Subtle cinematic zoom-in zoom on hover */
+}
+
+.video-poster-fallback h4 {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+/* High-Quality Automated Thumbnail Image Background */
+.video-thumbnail-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Keeps video framing perfect and sharp */
+  display: block;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.video-poster-wrapper:hover .video-thumbnail-bg {
+  transform: scale(1.05); /* Smooth motion effect when hovered */
+}

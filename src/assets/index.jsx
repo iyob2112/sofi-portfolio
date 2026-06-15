@@ -54,3 +54,21 @@ export { default as friends } from "./Sofi-projects/1 (13).jpg";
 export { default as kushna } from "./Sofi-projects/1 (12).jpg";
 export { default as fremina } from "./Sofi-projects/1 (1).png";
 export { default as friends2 } from "./Sofi-projects/1 (4).png";
+// NEW ADD
+export { default as dabonua } from "./new/papaya juice.png";
+export { default as dabonua2 } from "./new/Avocado juice.png";
+export { default as dabonua3 } from "./new/milkshake.png";
+export { default as dabonua5 } from "./new/milkshake2.png";
+export { default as dabonua4 } from "./new/Mango juice.png";
+
+export { default as seti } from "./new/skin.jpg";
+export { default as seti2 } from "./new/bean.jpg";
+export { default as seti3 } from "./new/face mask 1.jpg";
+export { default as seti4 } from "./new/2.png";
+export { default as seti5 } from "./new/4.png";
+export { default as seti6 } from "./new/packed cheese 1.o.1.png";
+export { default as seti7 } from "./new/sausage.png";
+export { default as seti8 } from "./new/chicken fillet.png";
+export { default as seti9 } from "./new/milkshake2-Recovered.jpg";
+
+
