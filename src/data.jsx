@@ -1,5 +1,6 @@
 import { FaPaintBrush } from "react-icons/fa";
 import { FaFacebook, FaInstagram, FaTelegramPlane } from "react-icons/fa";
+import { SiTiktok } from "react-icons/si";
 import { SiFiverr } from "react-icons/si";
 import { AiFillGithub, AiFillLinkedin, AiFillYoutube } from "react-icons/ai";
 import { FaCodeCompare } from "react-icons/fa6";
@@ -864,9 +865,9 @@ export const socialHandles = [
     link: "https://www.instagram.com/sofitesfu?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
   },
   {
-    name: "Github",
-    icon: <AiFillGithub />,
-    link: "",
+    name: "Tiktock",
+    icon: <SiTiktok  />,
+    link: "https://www.tiktok.com/@sofi.creative.dig?_r=1&_t=ZS-97FfADG52qy",
   },
   {
     name: "LinkedIn",
@@ -881,7 +882,7 @@ export const socialHandles = [
   {
     name: "Facebook",
     icon: <FaFacebook />,
-    link: "",
+    link: "https://web.facebook.com/people/Sofi-Tesfu/pfbid035MJ3pUMyPvMHVo6QEvMJYb3BYegLAJUHFoLbTQkp3nMTz8nQBWgvrBUhughFZoo1l/",
   },
 ];
 
