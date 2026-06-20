@@ -5,7 +5,7 @@ import Services from "../components/Services";
 import Skills from "../components/Skills";
 import Projects from "../components/Projects";
 import Videos from "../components/Videos"; // Add this line
-import Testimonials from "../components/Testimonials";
+// import Testimonials from "../components/Testimonials";
 import BTS from '../components/BTS'; 
 import Contact from "../components/Contact";
 

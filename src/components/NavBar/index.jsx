@@ -17,7 +17,7 @@ const Nabbar = () => {
         />
       )}
       <div
-        className="flex__center logo"
+        className="flex__center1 logo"
         onClick={() => scroll.scrollToTop({ duration: 500 })}
       >
         <Logo />
