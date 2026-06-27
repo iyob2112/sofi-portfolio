@@ -1,7 +1,8 @@
 // components/BTS.jsx
 import "./BTS.css"; // Reuse or mimic your project section styles
 import { btsItems } from "../../data";
-import VideoCard from "../../ui/VideoCard/VideoCard";
+// import VideoCard from "../../ui/VideoCard/VideoCard";
+import ImageCard from "../../ui/ImageCard/ImageCard";
 import { Link } from "react-router-dom";
 
 const BTS = () => {
@@ -16,16 +17,24 @@ const BTS = () => {
       <h2 className="shine">Featured Production Workflows</h2>
         </div>
 
-        <div className="videos__container">
+        {/* <div className="videos__container">
           {featuredVideos.map((video) => (
             <VideoCard {...video} key={video.id} />
           ))}
-        </div>
+        </div> */}
+        <div className="videos__container">
+  {featuredVideos.map((item) => (
+    <ImageCard {...item} key={item.id} />
+  ))}
+</div>
 
         <div className="view-all__actions">
-          <Link to="/all-videos-BTS" className="btn btn__primary">
+          {/* <Link to="/all-videos-BTS" className="btn btn__primary">
             View All Videos &rarr;
-          </Link>
+          </Link> */}
+          <Link to="/all-photos" className="btn btn__primary">
+  View All Photos →
+</Link>
         </div>
       </div>
     </section>

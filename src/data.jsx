@@ -67,6 +67,19 @@ import {
   seti7,
   seti8,
   seti9,
+
+  img1,
+img2,
+img3,
+img4,
+img5,
+img6,
+img7,
+img8,
+img9,
+img10,
+img11,
+img12,
 } from "./assets";
 
 export const menu = [
@@ -695,69 +708,168 @@ export const videos = [
     tags: ["graphicdesigner", "ethiopian_tik_tok", "vibe", "advertising", "tigraytiktok"]
   }
 ];
+// export const btsItems = [
+//   {
+//     id: 1,
+//     title: "Lighting Setup at Kabun Coffee",
+//     category: "Behind The Scenes", // Maps directly to category label
+//     videoId: "7638710013808102663", // Plays dynamically on click
+//     videoImage: "https://i.pinimg.com/1200x/47/1f/33/471f33d9a7d90ba9b777d73d5e86c944.jpg", // Custom cover
+//     description: "Configuring a softbox setup to capture crisp espresso pours and highlight the custom wooden counter details at Kabun.",
+//     tags: ["GearStack", "Mekelle", "Lighting"]
+//   },
+//   {
+//     id: 2,
+//     title: "Cake Close-ups at Yummy Bakery",
+//     category: "Behind The Scenes",
+//     videoId: "7630088036012936466",
+//     videoImage: "https://i.pinimg.com/736x/08/65/39/086539e23066740db283c605a836896b.jpg",
+//     description: "Using high-speed 120fps macro lens techniques to capture slow-motion frosting drips and golden pastry cuts.",
+//     tags: ["Macro", "Production", "Bakery"]
+//   },
+//   {
+//     id: 3,
+//     title: "Gimbal Rigging for Café Promos",
+//     category: "Camera Movement",
+//     videoId: "7568473135071169848",
+//     videoImage: "https://i.pinimg.com/736x/68/81/0d/68810d9452b4437e08ddd384a19627b6.jpg",
+//     description: "Balancing the Sony FX3 on a 3-axis stabilizer grid to achieve smooth, sweeping cinematic walkthrough transitions during busy morning hours.",
+//     tags: ["GimbalSetup", "SonyFX3", "CafeVibes"]
+//   },
+//   {
+//     id: 4,
+//     title: "Color Grading the Holiday Showcase",
+//     category: "Post-Production",
+//     videoId: "7627347484167245063",
+//     videoImage: "https://i.pinimg.com/736x/43/96/0c/43960c76f1186a7fc96f4dc5b00f1b54.jpg",
+//     description: "A look inside the editing suite matching SLOG3 color profiles to give the Easter holiday bakery campaign a warm, festive tone.",
+//     tags: ["DaVinciResolve", "ColorGrading", "EditingSuite"]
+//   },
+//   {
+//     id: 5,
+//     title: "Sound Design for Espresso Beats",
+//     category: "Audio Engineering",
+//     videoId: "7601743112624524552",
+//     videoImage: "https://i.pinimg.com/1200x/40/14/15/401415e37229b21cd738f6121f7a6613.jpg",
+//     description: "Layering crisp foley audio—the click of the portafilter, the steam wand hiss, and milk texturing—to match the rhythmic visual edit.",
+//     tags: ["FoleySound", "AudioDesign", "PrecisionEdit"]
+//   },
+//   {
+//     id: 6,
+//     title: "Dabona Juice Fluid Dynamics",
+//     category: "Commercial Motion",
+//     videoId: "7630042462320364821",
+//     videoImage: "https://i.pinimg.com/1200x/80/fa/eb/80faeb090abb3b73bf239bad58922048.jpg",
+//     description: "Behind the camera setup for tracking thick, vibrant avocado and protein shake pours against clean studio lighting arrays.",
+//     tags: ["FluidMotion", "JuicePromo", "StudioLighting"]
+//   },
+//   {
+//     id: 7,
+//     title: "Aesthetic Frame Composition",
+//     category: "Direction",
+//     videoId: "7572433040106900748",
+//     videoImage: "https://i.pinimg.com/1200x/05/92/f4/0592f4406f3d625151dc99d93ff46ad2.jpg",
+//     description: "Mapping out the rule of thirds and geometric symmetries to display coffee and custom sweet combos with a minimal, high-end editorial feel.",
+//     tags: ["Framing", "ArtDirection", "MinimalStyle"]
+//   },
+// ];
+
 export const btsItems = [
   {
     id: 1,
-    title: "Lighting Setup at Kabun Coffee",
-    category: "Behind The Scenes", // Maps directly to category label
-    videoId: "7638710013808102663", // Plays dynamically on click
-    videoImage: "https://i.pinimg.com/1200x/47/1f/33/471f33d9a7d90ba9b777d73d5e86c944.jpg", // Custom cover
-    description: "Configuring a softbox setup to capture crisp espresso pours and highlight the custom wooden counter details at Kabun.",
-    tags: ["GearStack", "Mekelle", "Lighting"]
+    title: "Lighting Setup",
+    category: "Photography",
+    image: img1,
+    description: "Preparing the lighting before filming.",
+    tags: ["lighting", "studio"],
   },
   {
     id: 2,
-    title: "Cake Close-ups at Yummy Bakery",
-    category: "Behind The Scenes",
-    videoId: "7630088036012936466",
-    videoImage: "https://i.pinimg.com/736x/08/65/39/086539e23066740db283c605a836896b.jpg",
-    description: "Using high-speed 120fps macro lens techniques to capture slow-motion frosting drips and golden pastry cuts.",
-    tags: ["Macro", "Production", "Bakery"]
+    title: "Camera Rig",
+    category: "Production",
+    image: img2,
+    description: "Camera setup.",
+    tags: ["camera", "gear"],
   },
   {
     id: 3,
-    title: "Gimbal Rigging for Café Promos",
-    category: "Camera Movement",
-    videoId: "7568473135071169848",
-    videoImage: "https://i.pinimg.com/736x/68/81/0d/68810d9452b4437e08ddd384a19627b6.jpg",
-    description: "Balancing the Sony FX3 on a 3-axis stabilizer grid to achieve smooth, sweeping cinematic walkthrough transitions during busy morning hours.",
-    tags: ["GimbalSetup", "SonyFX3", "CafeVibes"]
+    title: "Production",
+    category: "Production",
+    image: img3,
+    description: "Behind the scenes.",
+    tags: ["camera", "film"],
   },
   {
     id: 4,
-    title: "Color Grading the Holiday Showcase",
-    category: "Post-Production",
-    videoId: "7627347484167245063",
-    videoImage: "https://i.pinimg.com/736x/43/96/0c/43960c76f1186a7fc96f4dc5b00f1b54.jpg",
-    description: "A look inside the editing suite matching SLOG3 color profiles to give the Easter holiday bakery campaign a warm, festive tone.",
-    tags: ["DaVinciResolve", "ColorGrading", "EditingSuite"]
+    title: "Production",
+    category: "Production",
+    image: img4,
+    description: "Behind the scenes.",
+    tags: ["studio"],
   },
   {
     id: 5,
-    title: "Sound Design for Espresso Beats",
-    category: "Audio Engineering",
-    videoId: "7601743112624524552",
-    videoImage: "https://i.pinimg.com/1200x/40/14/15/401415e37229b21cd738f6121f7a6613.jpg",
-    description: "Layering crisp foley audio—the click of the portafilter, the steam wand hiss, and milk texturing—to match the rhythmic visual edit.",
-    tags: ["FoleySound", "AudioDesign", "PrecisionEdit"]
+    title: "Production",
+    category: "Production",
+    image: img5,
+    description: "Behind the scenes.",
+    tags: ["director"],
   },
   {
     id: 6,
-    title: "Dabona Juice Fluid Dynamics",
-    category: "Commercial Motion",
-    videoId: "7630042462320364821",
-    videoImage: "https://i.pinimg.com/1200x/80/fa/eb/80faeb090abb3b73bf239bad58922048.jpg",
-    description: "Behind the camera setup for tracking thick, vibrant avocado and protein shake pours against clean studio lighting arrays.",
-    tags: ["FluidMotion", "JuicePromo", "StudioLighting"]
+    title: "Production",
+    category: "Production",
+    image: img6,
+    description: "Behind the scenes.",
+    tags: ["crew"],
   },
   {
     id: 7,
-    title: "Aesthetic Frame Composition",
-    category: "Direction",
-    videoId: "7572433040106900748",
-    videoImage: "https://i.pinimg.com/1200x/05/92/f4/0592f4406f3d625151dc99d93ff46ad2.jpg",
-    description: "Mapping out the rule of thirds and geometric symmetries to display coffee and custom sweet combos with a minimal, high-end editorial feel.",
-    tags: ["Framing", "ArtDirection", "MinimalStyle"]
+    title: "Production",
+    category: "Production",
+    image: img7,
+    description: "Behind the scenes.",
+    tags: ["film"],
+  },
+  {
+    id: 8,
+    title: "Production",
+    category: "Production",
+    image: img8,
+    description: "Behind the scenes.",
+    tags: ["camera"],
+  },
+  {
+    id: 9,
+    title: "Production",
+    category: "Production",
+    image: img9,
+    description: "Behind the scenes.",
+    tags: ["shoot"],
+  },
+  {
+    id: 10,
+    title: "Production",
+    category: "Production",
+    image: img10,
+    description: "Behind the scenes.",
+    tags: ["studio"],
+  },
+  {
+    id: 11,
+    title: "Production",
+    category: "Production",
+    image: img11,
+    description: "Behind the scenes.",
+    tags: ["crew"],
+  },
+  {
+    id: 12,
+    title: "Production",
+    category: "Production",
+    image: img12,
+    description: "Behind the scenes.",
+    tags: ["director"],
   },
 ];
 export const skills = [

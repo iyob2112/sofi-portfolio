@@ -66,3 +66,15 @@ export { default as seti8 } from "./new/chicken fillet.png";
 export { default as seti9 } from "./new/milkshake2-Recovered.jpg";
 
 
+export { default as img1 } from "./BTS-Img/bts1.png";
+export { default as img2 } from "./BTS-Img/bts2.png";
+export { default as img3 } from "./BTS-Img/bts3.png";
+export { default as img4 } from "./BTS-Img/bts4.png";
+export { default as img5 } from "./BTS-Img/bts5.png";
+export { default as img6 } from "./BTS-Img/bts6.png";
+export { default as img7 } from "./BTS-Img/bts7.png";
+export { default as img8 } from "./BTS-Img/bts8.png";
+export { default as img9 } from "./BTS-Img/bts9.png";
+export { default as img10 } from "./BTS-Img/bts10.png";
+export { default as img11 } from "./BTS-Img/bts11.png";
+export { default as img12 } from "./BTS-Img/bts12.png";

@@ -5,6 +5,7 @@ import Home from "./ui/Home"; // Imported from Step 1
 import AllProjects from "./ui/AllProjects/AllProjects"; // Your new page
 import AllVideos from "./ui/AllVideos/AllVideos"; // Your new page
 import AllVideosBTS from "./ui/AllVideos BTS/AllVideosBTS"; // Your new page
+import AllPhotos from "./ui/AllPhotos/AllPhotos"; // Your new page
 
 
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
         <Route path="/all-projects" element={<AllProjects />} />
         <Route path="/all-videos" element={<AllVideos />} />
         <Route path="/all-videos-BTS" element={<AllVideosBTS />} />
+        <Route path="/all-photos" element={<AllPhotos />} />
       </Routes>
 
       <Footer />
