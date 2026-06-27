@@ -36,6 +36,7 @@ left:  30%;
 top: -50%;
 }
 
+
 /* Responsiveness */
 @media (max-width: 768px) {
   #header .grid,
@@ -65,5 +66,12 @@ object-fit: contain;
 position: absolute;
 left:  -20%;
 top: -20%;
+}
+.video {
+  width: 400px;
+  height: 240px;
+   object-fit: cover;
+
+  
 }
 }

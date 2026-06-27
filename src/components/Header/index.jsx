@@ -5,6 +5,7 @@ import CodeBlock from "../../ui/CodeBlock";
 import Facts from "../../ui/Facts";
 import SocialHandles from "../../ui/SocialHandles";
 import BreathCircle from "../../ui/BreathCircle";
+import introVideo from "../../assets/new color.mp4";
 const code = `const developer = {
     fristName:"Sofi",
     lastName:"tesfu",
@@ -36,9 +37,19 @@ const Header = () => {
           <div
             style={{ position: "relative", paddingBottom: "56.25%", height: 0 }}
           >
-            <iframe
+            <video
+              className="video"
+              src={introVideo}
+              width="560" height="315"
+              autoPlay
+              muted
+              loop
+              playsInline
+            />
+            {/* <iframe
               className="iframe"
-              width="560" height="315" src="https://www.youtube.com/embed/on5wLLnGocc?si=AoyeMRhZO-vx_0pz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>          </div>
+              width="560" height="315" src="https://www.youtube.com/embed/on5wLLnGocc?si=AoyeMRhZO-vx_0pz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>     */}
+                    </div>
           <div>
             <p className="text__muted description">
               I dissect Intricate user experience challenges to engineer
